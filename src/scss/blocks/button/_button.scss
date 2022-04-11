@@ -1,0 +1,30 @@
+.button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: $btnColor;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+
+  &__close {
+    background-image: url("../img/btn/close.svg");
+  }
+
+  &__search {
+    background-image: url("../img/btn/search.svg");
+  }
+
+  &__phone {
+    background-image: url("../img/btn/phone.svg");
+  }
+
+  &__email {
+    background-image: url("../img/btn/email.svg");
+  }
+
+  &__profile {
+    background-image: url("../img/btn/profile.svg");
+  }
+}

@@ -1,0 +1,99 @@
+.sidebar {
+  font-family: $fontFamily;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 100vh;
+  padding: 16px;
+  margin-bottom: 0;
+
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-left {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__btn {
+    margin-right: 15px;
+  }
+
+  &__nav {
+    flex: 1 0 auto;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 20px 0 32px 0;
+    }
+
+    &-item {
+      position: relative;
+      margin-bottom: 24px;
+      font-family: $fontFamily;
+      font-size: $fontSizeMd;
+      line-height: $lineHeightLg;
+      letter-spacing: -0.2px;
+      color: $textColorGrey;
+    }
+
+    &-link {
+      font-family: $fontFamily;
+      font-size: $fontSizeMd;
+      line-height: $lineHeightLg;
+      letter-spacing: -0.2px;
+      color: $textColorBlack;
+      text-decoration: none;
+
+      &--active {
+        color: $textColorGrey;
+      }
+
+      &--active::before {
+        position: absolute;
+        content: "";
+        width: 4px;
+        height: 30px;
+        left: -16px;
+        background: $borderColor;
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+      padding-top: 12px;
+      color: $textColorBlack;
+      text-decoration: none;
+    }
+
+    &-email {
+      font-size: $fontSizeMd;
+      line-height: $lineHeightLg;
+    }
+
+    &-phone {
+      font-size: $fontSizeLg;
+      line-height: $lineHeightXl;
+      color: $textColorBlack;
+      font-weight: bold;
+    }
+  }
+
+  &__lang {
+    flex: 1 0 auto;
+  }
+
+  &__feedback {
+    flex: 0 0 auto;
+  }
+}

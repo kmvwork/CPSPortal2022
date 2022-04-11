@@ -1,0 +1,22 @@
+.lang {
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 7px;
+
+    &-btn {
+      color: $textColorBlack;
+      font-weight: bold;
+      background: none;
+      border: none;
+
+      &--active {
+        color: $textColorGrey;
+      }
+    }
+  }
+}
