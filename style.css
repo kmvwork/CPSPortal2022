@@ -350,23 +350,23 @@ template {
     background-color: transparent; }
   .button--border-right {
     border: 2px solid #FF3E79; }
-  .button__close {
+  .button--close {
     background-image: url(./static/close.svg); }
-  .button__search {
+  .button--search {
     background-image: url(./static/search.svg); }
-  .button__phone {
+  .button--phone {
     background-image: url(./static/phone.svg); }
-  .button__email {
+  .button--email {
     background-image: url(./static/email.svg); }
-  .button__profile {
+  .button--profile {
     background-image: url(./static/profile.svg); }
-  .button__menu {
+  .button--menu {
     background-image: url(./static/menu.svg); }
-  .button__repair {
+  .button--repair {
     background-image: url(./static/repair.svg); }
-  .button__status {
+  .button--status {
     background-image: url(./static/status.svg); }
-  .button__arrow {
+  .button--arrow {
     background-image: url(./static/arrow-right.svg); }
   .button--description {
     background: none;
@@ -847,12 +847,6 @@ template {
   .brands__height {
     height: 160px !important;
     overflow: hidden; } }
-
-.brands__btn-more {
-  display: none; }
-  @media (min-width: 768px) {
-    .brands__btn-more {
-      display: block; } }
 
 .swiper {
   min-width: 320px; }
@@ -1399,11 +1393,11 @@ template {
     .offer {
       width: auto;
       margin-bottom: 28px; } }
-  .offer__text {
+  .offer--text {
     text-decoration: none;
     color: inherit;
     text-align: start; }
-  .offer__text:after {
+  .offer--text:after {
     display: inline-block;
     cursor: pointer;
     content: '';
@@ -1417,6 +1411,12 @@ template {
 
 .modal {
   display: none; }
+
+more {
+  display: none; }
+  @media (min-width: 768px) {
+    more {
+      display: block; } }
 
 *, *:before, *:after {
   box-sizing: border-box; }
